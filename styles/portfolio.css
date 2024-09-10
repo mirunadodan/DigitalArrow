@@ -1,0 +1,249 @@
+.portfolio {
+  margin-top: 5rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.portfolio__title {
+  font-size:2rem;
+}
+.portfolio__subtitle {
+  font-size:1.2rem;
+  margin-bottom: 2.5rem;
+}
+.portfolio__items {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-inline: auto;
+  max-width:80%;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.portfolio__item {
+  position: relative;
+}
+.portfolio__item__img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  bottom: 0;
+  background: #f51643a4;
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio__item:hover .portfolio__overlay {
+  opacity: 1;
+}
+
+.portfolio__btn {
+  display: block;
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem; 
+  margin-top: 1.5rem;
+  border: 2px solid #f51642;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 1s;
+  &:hover {
+      background-color:#f51642;
+      color: white;
+      box-shadow: 5px 5px 30px lightgray;
+  }
+}
+
+  /* xs */
+
+@media (max-width: 475px) {
+  .container {
+    min-width: 475px;
+}
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.portfolio__title {
+  font-size: 1.5rem;
+}
+.portfolio__subtitle {
+    font-size:1rem;
+    margin-bottom: 1.5rem;
+    width: 40ch;
+}
+.portfolio__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+}
+.portfolio__item {
+  margin-bottom: 1rem;
+}
+.port4, .port5, .port6 {
+  display: none;
+}
+.portfolio__btn {
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  margin-top: 1rem;
+}
+}
+
+/* s */
+
+@media (min-width:475px) and (max-width: 640px){
+  .container {
+    min-width: 640px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.portfolio__title {
+  font-size: 1.5rem;
+}
+.portfolio__subtitle {
+  font-size:1.2rem;
+  margin-bottom: 1.5rem;
+  width: 40ch;
+}
+.portfolio__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:0.5rem;
+}
+.portfolio__item {
+  margin-bottom: 1rem;
+}
+.port4, .port5, .port6 {
+display: none;
+}
+.portfolio__btn {
+display: block;
+font-size: 1.2rem;
+padding: 0.5rem 1rem;
+margin-top: 1rem;
+}
+}
+
+/* m */
+
+@media (min-width:640px) and (max-width: 768px) {
+  .container {
+    min-width: 768px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.portfolio__title {
+  font-size:1.5rem;
+}
+.portfolio__subtitle {
+  font-size:1.2rem;
+  margin-bottom: 1.5rem;
+  width: 40ch;
+}
+.portfolio__items {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+gap:0.5rem;
+}
+.portfolio__item {
+  margin-bottom: 1rem;
+}
+.port4, .port5, .port6 {
+display: none;
+}
+.portfolio__btn {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+}
+
+/* l */
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .container {
+    min-width: 1024px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__title {
+  font-size:1.8rem;
+}
+.portfolio__subtitle {
+  font-size:1.5rem;
+  margin-bottom: 1.5rem;
+  width: 40ch;
+}
+.portfolio__items {
+  grid-template-columns: repeat(2,1fr);
+}
+.portfolio__btn {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+}
+
+/* xl */
+
+@media (min-width:1024px) and (max-width: 1280px) {
+  .container {
+    min-width: 1280px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__title {
+  font-size:2rem;
+}
+.portfolio__subtitle {
+  font-size:1.5rem;
+  margin-bottom: 1.5rem;
+  width: 40ch;
+}
+.portfolio__items {
+  grid-template-columns: repeat(2,1fr);
+}
+.portfolio__btn {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+}
+
+/* 2xl */
+
+/* @media (max-width: 1536px) {
+} */
